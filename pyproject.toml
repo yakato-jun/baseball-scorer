@@ -2,7 +2,7 @@
 name = "baseball-scorer"
 version = "0.1.0"
 description = "草野球動画から打席タイムラインを生成するスコア収集補助ツール"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
     "numpy>=1.26",
     "scipy>=1.11",

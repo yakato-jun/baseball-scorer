@@ -27,6 +27,10 @@
 
 ```bash
 sudo apt install ffmpeg   # macOS: brew install ffmpeg
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -U pip setuptools
 pip install -e ".[dev]"
 ```
 
