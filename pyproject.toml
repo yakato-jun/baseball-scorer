@@ -1,17 +1,19 @@
 [project]
 name = "baseball-scorer"
 version = "0.1.0"
-description = "野球動画からのスコア収集支援ツール(決定的パイプライン + LLM フォールバック)"
+description = "草野球動画から打席タイムラインを生成するスコア収集補助ツール"
 requires-python = ">=3.11"
 dependencies = [
     "numpy>=1.26",
+    "scipy>=1.11",
     "opencv-python-headless>=4.9",
-    "pytesseract>=0.3.10",
-    "anthropic>=0.40",
+    "faster-whisper>=1.0",
+    "yt-dlp>=2025.1.1",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+llm = ["openai>=1.50"]
 
 [project.scripts]
 baseball-scorer = "baseball_scorer.cli:main"
