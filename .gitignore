@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+
+# 作業用の動画・フレームは含めない
+*.mp4
+*.mov
+*.avi
+frames/
+work/
